@@ -3,13 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/standard.css " />
+    <link rel="stylesheet" href="../styles/style.css" />
+
     <title>Notizblock</title>
-    <link rel="stylesheet" href="" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <script src="script.js"></script>
   </head>
-  <body onclick="renderNotes()">
+
+  <body onload="renderNotes()">
     <h1>Notizblock</h1>
+    <input type="text" id="note_input" />
+    <button onclick="addNote()">Notizen speichern</button>
+    <br /><br />
+    <h2>Notes</h2>
+    <br />
     <div id="content"></div>
+    <br /><br />
+    <h2>Notes Trash</h2>
+
+    <div id="trash_content"></div>
+    <!-- button onclick="deleteNote()"></button>-->
   </body>
+  <script src="../allscript/script.js" defer></script>
 </html>
